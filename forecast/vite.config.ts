@@ -16,6 +16,7 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3001 // Define a porta 3001
+    port: 3001, // Define a porta 3001
+    allowedHosts: true
   }
 })
