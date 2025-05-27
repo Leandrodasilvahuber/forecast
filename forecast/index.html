@@ -240,12 +240,12 @@
     </style>
 </head>
 <body>
-    <div class="header pixel-corners">
-        <h1 class="title">PORTFÓLIO 8-BIT</h1>
-        <p class="subtitle">>_ PROJETOS EM VUE.JS E MACHINE LEARNING</p>
-        <div class="loading-bar">
-            <div class="loading-progress"></div>
-        </div>
+    <div style="text-align: center;" >
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+      <h1 class="title">PORTFÓLIO DO HÜBER</h1>
+      <p class="subtitle">SEJA BEM VINDO!</p>
     </div>
     
     <!-- Projeto 1: Weather App Vue.js -->
@@ -254,10 +254,13 @@
         <p class="project-subtitle">Aplicativo Vue.js que consome API meteorológica</p>
         
         <div class="tech-stack">
-            <span class="tech-item">Vue.js</span>
-            <span class="tech-item">Axios</span>
-            <span class="tech-item">OpenWeatherMap API</span>
-            <span class="tech-item">Chart.js</span>
+            <span class="tech-item">Segunda</span>
+            <span class="tech-item">Terça</span>
+            <span class="tech-item">Quarta</span>
+            <span class="tech-item">Quinta</span>
+            <span class="tech-item">Sexta</span>
+            <span class="tech-item">Sábado</span>
+            <span class="tech-item">Domingo</span>
         </div>
         
         <div class="weather-display">
@@ -281,24 +284,13 @@
                 <div>Vento</div>
                 <div>12km/h</div>
             </div>
+            <div class="weather-card">
+              <div class="weather-icon">↘️</div>
+              <div>Direção do Vento</div>
+              <div>Oeste</div>
+          </div>
         </div>
         
-        <div class="code-block">
-            // Código Vue.js para consumir API
-            async fetchWeatherData() {
-              try {
-                const response = await axios.get(
-                  `https://api.openweathermap.org/data/2.5/onecall?lat=${this.lat}&lon=${this.lon}&exclude=minutely,hourly&appid=${this.apiKey}&units=metric&lang=pt`
-                );
-                this.weatherData = response.data;
-                this.calculateSurfConditions();
-              } catch (error) {
-                console.error("Erro ao buscar dados:", error);
-              }
-            }
-        </div>
-        
-        <p>>_ Exibe condições em tempo real e previsão para 7 dias com gráficos interativos.</p>
     </div>
     
     <!-- Projeto 2: Surf Prediction ML -->
@@ -307,62 +299,45 @@
         <p class="project-subtitle">Modelo de ML que prevê condições ideais para surf</p>
         
         <div class="tech-stack">
-            <span class="tech-item">Python</span>
-            <span class="tech-item">TensorFlow</span>
-            <span class="tech-item">Pandas</span>
-            <span class="tech-item">Flask</span>
+          <span class="tech-item">Segunda</span>
+          <span class="tech-item">Terça</span>
+          <span class="tech-item">Quarta</span>
+          <span class="tech-item">Quinta</span>
+          <span class="tech-item">Sexta</span>
+          <span class="tech-item">Sábado</span>
+          <span class="tech-item">Domingo</span>
         </div>
         
         <div class="surf-prediction">
             <div class="surf-icon">🏄‍♂️</div>
-            <div class="surf-status excellent">CONDIÇÕES: EXCELENTES!</div>
-            <div class="surf-icon">🤙</div>
+            <div class="surf-status excellent">CONDIÇÕES: Tá Rolando!</div>
         </div>
-        
-        <div class="code-block">
-            # Treinamento do modelo
-            model = Sequential([
-                Dense(64, activation='relu', input_shape=(X_train.shape[1],)),
-                Dense(64, activation='relu'),
-                Dense(4, activation='softmax')  # 4 classes: ruim, médio, bom, excelente
-            ])
-            
-            model.compile(optimizer='adam',
-                        loss='sparse_categorical_crossentropy',
-                        metrics=['accuracy'])
-            
-            history = model.fit(X_train, y_train, epochs=50, 
-                             validation_data=(X_val, y_val))
-        </div>
-        
-        <p>>_ Analisa histórico de 5 anos de dados para prever condições com 92% de acurácia.</p>
         
         <div style="margin-top: 20px;">
             <h3 style="color: var(--secondary);">Ícones de Status:</h3>
             <div style="display: flex; justify-content: space-around; margin-top: 10px;">
                 <div style="text-align: center;">
                     <div style="font-size: 2rem;">👎</div>
-                    <div>Ruim</div>
+                    <div>Força Barra</div>
                 </div>
                 <div style="text-align: center;">
                     <div style="font-size: 2rem;">😐</div>
-                    <div>Médio</div>
+                    <div>Tem uma Valinha</div>
                 </div>
                 <div style="text-align: center;">
                     <div style="font-size: 2rem;">👍</div>
-                    <div>Bom</div>
+                    <div>Tem umas boas</div>
                 </div>
                 <div style="text-align: center;">
                     <div style="font-size: 2rem;">🤙</div>
-                    <div>Excelente</div>
+                    <div>Tá Rolando</div>
                 </div>
             </div>
         </div>
     </div>
     
     <div class="footer">
-        <p>>_ PRESSIONE START PARA CONTINUAR <span class="cursor">_</span></p>
-        <p>CONTATO: DEV@8BIT.SURF | (11) 5555-1985</p>
+        <p>CONTATO: emaildohuber@gmail.com | (51) 98555-8361</p>
     </div>
     
     <script>
@@ -403,7 +378,7 @@
             const status = document.querySelector('.surf-status');
             const icons = document.querySelectorAll('.surf-icon');
             const statusClasses = ['excellent', 'good', 'medium', 'bad'];
-            const statusTexts = ['EXCELENTES!', 'BOAS', 'MÉDIAS', 'RUINS'];
+            const statusTexts = ['TÁ ROLANDO!', 'TEM UMA VALINHA', 'TEM UMAS BOAS', 'FORÇA BARRA'];
             const statusIcons = ['🤙', '👍', '😐', '👎'];
             
             const randomStatus = Math.floor(Math.random() * 4);
@@ -412,7 +387,7 @@
             status.textContent = `CONDIÇÕES: ${statusTexts[randomStatus]}`;
             
             icons[0].textContent = statusIcons[randomStatus];
-            icons[1].textContent = statusIcons[randomStatus];
+            //icons[1].textContent = statusIcons[randomStatus];
         }, 3000);
     </script>
 </body>
