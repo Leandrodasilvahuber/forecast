@@ -24,10 +24,10 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  border: var(--border) var(--primary);
   position: relative;
   overflow-x: hidden;
 }
+
 
 body::before {
   content: "";
