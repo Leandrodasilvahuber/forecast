@@ -38,10 +38,9 @@
 
   onMounted(async () => {
     try {
+      //const responseToday = await axios.get('http://www.leandrohuber.com.br:3000/forecast');
       const responseToday = await axios.get('http://localhost:3000/forecast');
       weatherData.value = responseToday.data.forecast;
-      
-      console.log(weatherData.value); 
     } catch (error) {
       console.error("Erro ao buscar dados:", error);
     }
