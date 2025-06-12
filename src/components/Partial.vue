@@ -14,19 +14,19 @@
     { 
       emoji: props.weatherData.waveDirectionIcon, 
       label: 'Ondas', 
-      value: `${props.weatherData.waveDirection}` },
+      value: `${props.weatherData.waveDirection}` 
+    },
     { 
       emoji: '💨', 
       label: 'Vento', 
-      value: `${props.weatherData.windSpeed} m/s` },
+      value: `${props.weatherData.windSpeed} m/s` 
+    },
     { 
       emoji: props.weatherData.waveDirectionIcon, 
       label: 'Vento', 
-      value: `${props.weatherData.waveDirection}` },
-    { 
-      emoji: '🌡️', 
-      label: 'Água', 
-      value: props.weatherData.currentTemp }
+      value: `${props.weatherData.waveDirection}` 
+    }
+
   ]);
 </script>
 
