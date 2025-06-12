@@ -30,7 +30,7 @@
           <span style="font-size: 56px">{{ props.weatherData.conditionIcon }}</span>
         </div>
         <div>
-          <span class="text-h2">{{ props.weatherData.currentTemp }}°</span><h6>🌡️<h6>
+          <span class="text-h2">{{ props.weatherData.currentTemp }}°</span><h6>🌡️</h6>
         </div>
       </div>
     </v-card-text>
