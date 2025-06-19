@@ -18,9 +18,19 @@
                 class="text-center forecast-day" 
                 :style="{ border: '1px solid', borderColor: day.color }
               ">
-                <div class="text-caption font-weight-smaller mb-1">{{ day.date }}</div>
+                <div style="font-size: 15px !important" class="text-caption font-weight-smaller mb-1 mt-1">{{ day.weekDay.toUpperCase() }}</div>
+                  <v-divider></v-divider>
+                <div style="font-size: 10px !important" class="text-caption font-weight-smaller mb-1 mt-1">{{ day.date }}</div>
                 <v-divider></v-divider>
-                <div class="text-caption font-weight-smaller mb-1">{{ day.time }}</div>
+                <div style="font-size: 10px !important"  class="text-caption font-weight-smaller mb-1 mt-1">{{ day.time }}</div>
+                
+                <v-divider></v-divider>
+                <div style="font-size: 18px" class="mb-1">{{ day.condicao.icon }}</div>
+
+                <div style="font-size: 8px !important" class="text-caption font-weight-bold mb-2">
+                  {{ day.condicao.text.substring(0, 11) }}
+                </div>
+                
                 <v-divider></v-divider>
                 <div style="font-size: 18px" class="mb-1">{{ day.emoji }}</div>
                 <div class="text-caption font-weight-bold mb-2">
