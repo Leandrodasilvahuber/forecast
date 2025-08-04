@@ -22,9 +22,9 @@
             value: `${props.weatherData.windSpeed} m/s`,
         },
         {
-            emoji: props.weatherData.waveDirectionIcon,
+            emoji: props.weatherData.windDirectionIcon,
             label: "Vento",
-            value: `${props.weatherData.waveDirection}`,
+            value: `${props.weatherData.windDirection}`,
         },
     ]);
 </script>
