@@ -43,6 +43,28 @@
                     >{{ props.weatherData.currentTemp }}°</span
                 >
             </div>
+            <div class="d-flex align-end justify-end w-100 mb-3">
+                <a
+                    href="https://condicaoatual.com.br/praia-dos-ingleses/"
+                    style="text-decoration: none; color: aqua"
+                >
+                    <div class="text-center mr-6">
+                        <span class="text-h4">🎥</span>
+                        <br />
+                        <span>Zinga</span>
+                    </div>
+                </a>
+                <a
+                    href="https://condicaoatual.com.br/praia-mole/"
+                    style="text-decoration: none; color: aqua"
+                >
+                    <div class="text-center mr-6">
+                        <span class="text-h4">🎥</span>
+                        <br />
+                        <span>Mole</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </v-card-text>
 </template>
